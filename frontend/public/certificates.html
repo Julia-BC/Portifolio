@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados</title>
+    <link rel="stylesheet" href="/frontend/styles/style.css">
+    <link rel="stylesheet" href="/frontend/styles/certificates.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="/frontend/scripts/main.js"></script>
+</head>
+<body>
+    <header class="header">
+       <div class="container">
+
+        <div class="logo">
+           <p id="logo">&lt; / &gt; Júlia Bernardes</p>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/frontend/public/about.html">About</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="https://wniofithcxdbukgohmum.supabase.co/storage/v1/object/public/portfolio/curriculo.pdf" target="_blank">Currículo</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-toggle">
+            <input type="checkbox" id="toggle-theme">
+            <label for="toggle-theme" class="toggle-label">
+                <span class="moon">🌙</span>
+                <span class="sun">☀️</span>
+            </label>
+        </div>
+
+       </div>
+    </header>
+
+    <section class="certificates">
+        <div class="container">
+            <div class="certificates-grid" id="certificates-container">
+                <!-- Certificados serão carregados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+<script src="/frontend/scripts/theme.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>portifolio</title>
+        <link rel="stylesheet" href="/frontend/styles/style.css">
+        <link rel="stylesheet" href="/frontend/styles/index.css">
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script type="module" src="/frontend/scripts/main.js"></script>
+    
+
+</head>
+<body>
+    <header class="header">
+       <div class="container">
+
+        <div class="logo">
+           <p id="logo">&lt; / &gt; Júlia Bernardes</p>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/frontend/public/about.html">About</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="https://wniofithcxdbukgohmum.supabase.co/storage/v1/object/public/portfolio/curriculo.pdf" target="_blank">Currículo</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-toggle">
+            <input type="checkbox" id="toggle-theme">
+            <label for="toggle-theme" class="toggle-label">
+                <span class="moon">🌙</span>
+                <span class="sun">☀️</span>
+            </label>
+        </div>
+
+       </div>
+    </header>
+
+    <!-- Home Section -->    
+    <section class="home" id="apresentacao">
+        
+        <div class="home-text">
+            <h1>Eu sou a <br>Júlia Bernardes</h1>
+            <p>Desenvolvedora Full Stack focada em criar aplicações eficientes e bem estruturadas.</p>
+            
+            <a href="about.html" class="button">Mais sobre mim</a>
+
+           <div class="social-links">
+                <a href="https://github.com/Julia-BC" target="_blank" id="github">
+                    <img src="/frontend/assets/icons/github.png" alt="GitHub" ">
+                </a>
+
+                <a href="https://www.linkedin.com/in/j%C3%BAliabcarvalho/" target="_blank" id="linkedin">
+                    <img src="/frontend/assets/icons/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- TECNOLOGIAS -->    
+    <section class="skills" id="skills" >
+        <div class="container">
+
+            <div class="skills-grid" id="skills-container">
+                <!-- Tecnologias serão carregadas via JavaScript -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+     <section class="projects" id="projects">
+        <div class="container">
+
+            <h2>Projetos</h2>
+
+            <div class="projects-grid" id="projects-container">
+                <!-- Projetos serão carregados via JavaScript -->
+            </div>
+
+            <a href="projects.html" class="button">Ver todos os projetos</a>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+            <p>© 2026 Júlia Bernardes. Todos osdireitos reservados.</p>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contatos</h4>
+            <p class="contact-item">
+                <img src="/frontend/assets/icons/o-email.png" alt="email-icon">
+                <a href="mailto:juliabernardesbowen@gmail.com">juliabernardesbowen@gmail.com</a>
+            </p>
+
+            <p class="contact-item">
+                <img src="/frontend/assets/icons/linkedin.png" alt="linkedin-icon">
+                <a href="https://www.linkedin.com/in/j%C3%BAliabcarvalho/" target="_blank">
+                    LinkedIn
+                </a>
+            </p>
+
+            <p class="contact-item">
+                <img src="/frontend/assets/icons/github.png" alt="github-icon">
+                <a href="https://github.com/Julia-BC" target="_blank">
+                    GitHub
+                </a>
+            </p>
+        </div>
+
+</footer>
+
+<script src="/frontend/scripts/theme.js"></script>
+
+</body>
+</html>

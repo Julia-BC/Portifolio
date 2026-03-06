@@ -1,0 +1,152 @@
+/* RESETAR */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+    /* CORES */
+
+    --color-background: #ffffff;
+    --color-surface: #f2faf6;
+
+    --color-text: #000000;
+    --color-text-light: #4E2AC7;
+
+    /* BOTÕES */
+    --button-radius: 8px;
+    --button-padding: 10px 20px;
+
+    /* TRANSIÇÕES */
+    --transition-default: 0.3s;
+
+}
+
+.dark-mode {
+    --color-text-light: #4E2AC7;
+    --color-text: #f5f5f5;
+    --color-surface: #1e1e1e;
+    --color-background: #171717;
+}
+
+.theme-toggle{
+    margin-left: 20px;
+}
+
+#toggle-theme{
+    display: none;
+}
+
+.toggle-label{
+    width: 60px;
+    height: 30px;
+    background: var(--color-background);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-label::after{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    transition: 0.3s;
+}
+
+#toggle-theme:checked + .toggle-label::after{
+    transform: translateX(30px);
+}
+
+.moon{
+    font-size: 14px;
+}
+
+.sun{
+    font-size: 14px;
+}
+
+
+/* TIPOGRAFIA / ESTILOS GERAIS*/
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* LAYOUTS */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* COMPONENTES */
+
+header{
+    background-color: var(--color-surface);
+    padding: 20px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color:var(--color-text);
+    font-size:16px;
+    transition:var(--transition-default);
+}
+
+.nav-links a:hover {
+    color: var(--color-text-light);
+}
+
+.button{
+    background:var(--color-text);
+    color:white;
+
+    border:none;
+    border-radius:var(--radius-default);
+
+    padding:10px 20px;
+
+    cursor:pointer;
+    transition:var(--transition-default);
+}
+
+.button:hover{
+    background:var(--color-text-light);
+}

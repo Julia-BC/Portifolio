@@ -1,0 +1,6 @@
+const SUPABASE_URL = "https://wniofithcxdbukgohmum.supabase.co"
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InduaW9maXRoY3hkYnVrZ29obXVtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5NjcwMDAsImV4cCI6MjA4NzU0MzAwMH0.fJmO-Mf3XTpR7bEb6dGHlXUHsR7eYFRCgYVuI9TwnUQ"
+
+const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY)
+
+export default supabaseClient
